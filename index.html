@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff4f7">
+<title>A little world, just for you ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient" aria-hidden="true"></div>
+<div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+<section class="intro" id="intro">
+  <div class="intro-orb orb-a"></div><div class="intro-orb orb-b"></div>
+  <div class="intro-content">
+    <div class="eyebrow">PREPARING A LITTLE SURPRISE</div>
+    <h1>Wait for it<span>...</span></h1>
+    <div class="count" id="count">5</div>
+    <p>I made this little corner of the internet just for you.<br>Give me a few seconds. <span class="pink">♥</span></p>
+    <div class="progress"><span id="progressBar"></span></div>
+    <small>a soft birthday tune will start with the surprise</small>
+    <button class="pill-button" id="skipIntro">OPEN THE SURPRISE <span>✦</span></button>
+  </div>
+  <div class="intro-bottom">ONE LITTLE PAGE AT A TIME · MADE FOR YOU</div>
+</section>
+
+<div id="experience" class="hidden">
+  <header class="site-header">
+    <span class="brand">MADE FOR YOU <b>♡</b></span>
+    <div class="header-actions">
+      <span class="page-indicator" id="pageIndicator">01 / 08</span>
+      <button class="round-button" id="soundToggle" aria-label="Toggle soft sound">♫</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page hero page-active" data-page="0">
+      <div class="sprinkle-field" aria-hidden="true"></div>
+      <div class="eyebrow">TODAY IS ALL ABOUT YOU</div>
+      <h2>Happy Birthday<br><em class="person-name">MS.PSYCO</em> <span class="heart">♡</span></h2>
+      <p class="hero-sub">Some people deserve a birthday wish. You deserve a whole little world.</p>
+      <p class="script-line">a little world, just for you.</p>
+      <button class="pill-button next-page">START THE SURPRISE <span>✦</span></button>
+      <div class="tiny-note">ONE LITTLE PAGE AT A TIME ↓</div>
+    </section>
+
+    <section class="page" data-page="1">
+      <div class="eyebrow">01 — A NOTE FOR YOU</div>
+      <h2>A person worth for<br>celebrating.</h2>
+      <p class="subtitle">Not only today. On the random Days too.</p>
+      <article class="note-card">
+        <p class="note-copy">Oye Mrs.Psyco wish you a very Happy Birthday to you.</p>
+        <p class="note-copy">Rey Pandi your always special to mee and I always be wth you in every sistuvation.</p>
+        <div class="script-sign">with lots of love, always ♡</div>
+      </article>
+      <button class="text-next next-page">A FEW MEMORIES AHEAD <span>→</span></button>
+    </section>
+
+    <section class="page" data-page="2">
+      <div class="eyebrow">02 — YOUR MEMORIES</div>
+      <h2>Some moments deserve<br>a whole little gallery.</h2>
+      <p class="subtitle">Swipe through them. Take your time. These are the bits worth keeping.</p>
+      <div class="gallery-shell">
+        <button class="gallery-arrow prev" id="galleryPrev" aria-label="Previous memory">‹</button>
+        <div class="gallery-track" id="galleryTrack">
+          <article class="memory-card"><img src="assets\Snapchat-1015348364.jpg" alt="Memory one"><div class="memory-meta">MEMORY 01</div><h3>That one perfect day</h3><p>Somewhere between laughing and feeling absolutely at home.</p></article>
+          <article class="memory-card"><img src="assets\IMG_20261103_20585695.jpeg" alt="Memory two"><div class="memory-meta">MEMORY 02</div><h3>Golden hour</h3><p>Somewhere between laughing and doing absolutely nothing.</p></article>
+          <article class="memory-card"><img src="assets\621684515_17960145906020390_1444831112127067454_n.jpg" alt="Memory three"><div class="memory-meta">MEMORY 03</div><h3>A little chaos</h3><p>Not everything has to be perfect to become a favourite memory.</p></article>
+          <article class="memory-card"><img src="assets\IMG_20261103_20581109.jpeg" alt="Memory four"><div class="memory-meta">MEMORY 04</div><h3>More to come</h3><p>This is only the beginning of the memory that I collect.</p></article>
+          <article class="memory-card"><img src="assets\l.jpg" alt="Memory four"><div class="memory-meta">MEMORY 05</div><h3>More to come</h3><p>“Some moments may pass, but their beauty never fades. They come back to life as beautiful memories, bringing smiles to our hearts once again.” 🌸.</p></article>
+          <article class="memory-card"><img src="assets\Snapchat-216831427.jpg" alt="Memory one"><div class="memory-meta">MEMORY 06</div><h3>A STAR</h3><p>MOON also didn't shine like you MADAM.</p></article>
+          <article class="memory-card"><img src="assets\Snapchat-1015097759.jpg" alt="Memory two"><div class="memory-meta">MEMORY 07</div><h3>Golden days</h3><p>Old Days are Golden Days.</p></article>
+          <article class="memory-card"><img src="assets\Screenshot_2026_0507_094559.png" alt="Memory three"><div class="memory-meta">MEMORY 08</div><h3>BEAUTY HIDDEN</h3><p>I fell for your EAGLE NOSE MS.PSYCO.</p></article>
+          <article class="memory-card"><img src="assets\615732153_17959250349020390_7347199578688660077_n.jpg" alt="Memory four"><div class="memory-meta">MEMORY 09</div><h3>More to come</h3><p>BEAUTY with BRAINLESS.</p></article>
+          <article class="memory-card"><img src="assets\Snapchat-312640575.jpg" alt="Memory four"><div class="memory-meta">MEMORY 10</div><h3>More to come</h3><p>Some thoughts are Dangerous for imaginations also.</p></article>
+        </div>
+        <button class="gallery-arrow next" id="galleryNext" aria-label="Next memory">›</button>
+      </div>
+      <div class="dots" id="galleryDots"><button class="active" aria-label="Memory 1"></button><button aria-label="Memory 2"></button><button aria-label="Memory 3"></button><button aria-label="Memory 4"></button></div>
+      <p class="micro-hint">← swipe or tap the arrows →</p>
+      <button class="text-next next-page">NEXT LITTLE PAGE <span>→</span></button>
+    </section>
+
+    <section class="page" data-page="3">
+      <div class="eyebrow">03 — JUST BECAUSE</div>
+      <h2>A few things worth<br>remembering about you.</h2>
+      <p class="subtitle">The little things are usually the biggest things.</p>
+      <div class="reasons">
+        <article><span>♡</span><div><h3>Your laugh</h3><p>The kind that makes everyone around you smile too.</p></div></article>
+        <article><span>✿</span><div><h3>Your energy</h3><p>You somehow make ordinary plans feel like an event.</p></div></article>
+        <article><span>✧</span><div><h3>Your heart</h3><p>You care deeply, and that's one of the loveliest things about you.</p></div></article>
+        <article><span>★</span><div><h3>Just you</h3><p>No big reason needed. You are simply, a star on my opinion.</p></div></article>
+      </div>
+      <button class="text-next next-page">THERE'S MORE <span>→</span></button>
+    </section>
+
+    <section class="page" data-page="4">
+      <div class="eyebrow">04 — THE STORY SO FAR</div>
+      <h2>More chapters are<br>waiting.</h2>
+      <p class="subtitle">The best part? We haven't reached the good stuff yet.</p>
+      <div class="chapters">
+        <article><span>CHAPTER 01</span><h3>The beginning</h3><p>The Journey starts with problems,wwe want to face it Courage.</p></article>
+        <article><span>CHAPTER 02</span><h3>The random days</h3><p>Good Days are may be short in life but they are memoriable in your life.</p></article>
+        <article><span>CHAPTER 03</span><h3>The next adventure</h3><p>After a every Bad day ,A GOOD DAY is waiting for us,we have wait until it comes.</p></article>
+      </div>
+      <button class="text-next next-page">TIME FOR A WISH <span>→</span></button>
+    </section>
+
+    <section class="page cake-page" data-page="5">
+      <div class="eyebrow">05 — CANDLE TIME</div>
+      <h2>Before the cake... make<br>your wish.</h2>
+      <p class="subtitle">Three candles. One secret wish. Tap them one by one — or use your microphone and actually blow.</p>
+      <div class="cake-scene" id="cakeScene">
+        <div class="candles">
+          <button class="candle lit" aria-label="Blow out candle one"><i></i></button>
+          <button class="candle lit" aria-label="Blow out candle two"><i></i></button>
+          <button class="candle lit" aria-label="Blow out candle three"><i></i></button>
+        </div>
+        <div class="cake-top"><span>• • • • •</span></div>
+        <div class="cake-tier tier-one"></div><div class="cake-tier tier-two"></div><div class="cake-tier tier-three"></div>
+        <div class="cake-plate"></div>
+      </div>
+      <p class="cake-status" id="cakeStatus">Tap a candle to blow it out. 🕯</p>
+      <div class="button-row"><button class="pill-button pale" id="micBlow">BLOW WITH MIC <span>🎙</span></button><button class="pill-button pale hidden" id="stopMic">STOP LISTENING</button></div>
+      <p class="permission-note" id="micNote">Microphone is optional. You can always tap the candles.</p>
+    </section>
+
+    <section class="page cut-page" data-page="6">
+      <div class="confetti-corner"></div>
+      <div class="eyebrow">06 — THE CAKE IS YOURS</div>
+      <h2>Okay. Now slide to cut<br>your cake.</h2>
+      <p class="subtitle">Hold the little knife and drag it down across the cake. Take your time — this is your moment. 🎂</p>
+      <div class="cut-scene" id="cutScene">
+        <div class="cut-cake" id="cutCake"><div class="cut-icing"></div><div class="cake-dots">•　•　•　•　•</div></div>
+        <div class="knife" id="knife" role="slider" aria-label="Drag knife across cake" tabindex="0">╱</div>
+        <div class="cut-plate"></div>
+      </div>
+      <p class="cake-status" id="cutStatus">CAKE CUT. YOUR WISH IS ON ITS WAY. ♥</p>
+      <button class="pill-button pale" id="cutFallback">TAP TO CUT INSTEAD</button>
+    </section>
+
+    <section class="page wish-page" data-page="7">
+      <div class="eyebrow">07 — WISH SENT INTO THE UNIVERSE</div>
+      <div class="wish-heart">♡</div><div class="sparkle">✦</div>
+      <h2 class="script-big">Make a wish,<br>birthday girl.</h2>
+      <p class="wish-copy">Whatever you wished for when those candles went out, I hope life quietly says yes. And when the next beautiful chapter starts, I hope you remember this little page and smile.</p>
+      <button class="pill-button" id="toLetter">ONE LAST LITTLE PAGE <span>→</span></button>
+      <div class="floating-hearts">♡　✧　♡　✦　♡</div>
+    </section>
+
+    <section class="page letter-page" data-page="8">
+      <div class="eyebrow">08 — KEEP THIS ONE</div>
+      <h2>A letter, just in case you<br>ever need it.</h2>
+      <article class="letter-card">
+        <h3>Dear <span class="person-name">Aanya</span>,</h3>
+        <p>I hope you never forget how many beautiful little things make you, you. The laugh, the weird jokes, the way you get excited about something small. The comfort you give people without even trying.</p>
+        <p>So today, celebrate yourself properly. Eat the cake. Take the pictures. Make the wish. Stay up a little too late. And let yourself be ridiculously happy for a while.</p>
+        <p>Whatever this next year brings, I hope it brings you closer to the life you secretly want. And whenever you need a reminder that someone is cheering for you, come back to this little page.</p>
+        <div class="script-sign">always cheering for you ♡</div>
+      </article>
+      <div class="scrapbook">
+        <img src="assets/memory-1.svg" alt="A favourite scrapbook memory">
+        <div class="scrap-caption">one for the scrapbook ♡</div>
+        <div class="scrap-small"><figure><img src="assets/memory-2.svg" alt="Cake memory"><figcaption>make a wish ✨</figcaption></figure><figure><img src="assets/memory-4.svg" alt="Friends memory"><figcaption>more memories soon</figcaption></figure></div>
+      </div>
+      <button class="pill-button" id="replay">REPLAY YOUR SURPRISE ↺</button>
+    </section>
+  </main>
+  <footer>MADE WITH A RIDICULOUS AMOUNT OF LOVE <span>♡</span></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
